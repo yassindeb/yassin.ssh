@@ -1,8 +1,10 @@
 import "./globals.css";
-import { NextUIProvider } from "@nextui-org/react";
 
+import { Footer, Navbar } from "@/components/layout";
+import Providers from "./providers";
 export const metadata = {
-  title: "Yassin's Website",
+  title: "yassin",
+  description: "Created by Yassin Moussamih",
 };
 
 export default function RootLayout({
@@ -12,7 +14,17 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Providers>
+          <div className="flex flex-col min-h-screen justify-between ">
+            <div>
+              <Navbar />
+              <div className="container mx-auto px-4">{children}</div>
+            </div>
+            <Footer />
+          </div>
+        </Providers>
+      </body>
     </html>
   );
 }
