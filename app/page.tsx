@@ -11,7 +11,7 @@ export default function Home() {
           height={500}
         />
         <Image
-          className="mb-4 block dark:hidden"
+          className=" block dark:hidden"
           src="/logoWhite.png"
           alt="light-mode-image"
           width={500}

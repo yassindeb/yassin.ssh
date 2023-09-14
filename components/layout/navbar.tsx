@@ -24,7 +24,7 @@ export const Navbar = () => {
             height={50}
           />
           <Image
-            className="mb-4 block dark:hidden"
+            className="block dark:hidden"
             src="/logoWhite.png"
             alt="light-mode-image"
             width={50}
