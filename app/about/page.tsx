@@ -15,7 +15,7 @@ export default async function AboutPage() {
   return (
     <div className="flex justify-center align-center">
       <article className="prose prose-stone dark:prose-invert max-w-2xl">
-        <ReactMarkdown rehypePlugins={[rehypeRaw, remarkGfm]}>
+        <ReactMarkdown rehypePlugins={[rehypeRaw]} remarkPlugins={[remarkGfm]}>
           {markdown}
         </ReactMarkdown>
       </article>
