@@ -15,7 +15,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className="transition-colors duration-1000">
         <Providers>
           <div className="flex flex-col min-h-screen justify-between ">
             <div>
