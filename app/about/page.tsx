@@ -3,7 +3,7 @@ import rehypeRaw from "rehype-raw";
 import remarkGfm from "remark-gfm";
 
 const contentUrl =
-  "https://raw.githubusercontent.com/yassinmoussamih/yassinmoussamih/main/README.md";
+  "https://raw.githubusercontent.com/yassinssh/yassinssh/main/README.md";
 
 export default async function AboutPage() {
   const pageContent = await fetch(contentUrl, {
